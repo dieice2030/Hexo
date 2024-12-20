@@ -98,8 +98,10 @@ $$
 - 保留变换矩阵，存储在Shape的`Location`中
 - 本质上是修改Shape的Location，在Shape本身已有Location变换的情况下，省去了额外的计算
 - 速度快
+- 缩放只能能比缩放
 
 ### BRepBuilderAPI_GTransform
+- 缩放可以任意比例缩放
 - Shape的类型有可能发生改变 (例如Line变成Spline，Plane变成SplineFae)
 - 不保留变换矩阵
 - 速度慢
